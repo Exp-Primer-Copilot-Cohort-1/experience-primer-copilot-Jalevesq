@@ -1,12 +1,14 @@
 function skillsMember() {
-    var member = document.getElementById("member");
-    var skills = document.getElementById("skills");
-    var projects = document.getElementById("projects");
-    var contact = document.getElementById("contact");
-    var about = document.getElementById("about");
-    member.style.display = "block";
-    skills.style.display = "none";
-    projects.style.display = "none";
-    contact.style.display = "none";
-    about.style.display = "none";
+    return {
+        name: 'John Doe',
+        age: 23,
+        skills: ['HTML', 'CSS', 'JS'],
+        salary: 1000,
+        getSalary() {
+            return this.salary;
+        },
+        setSalary(value) {
+            this.salary = value;
+        }
+    }
 }
